@@ -2,7 +2,22 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	int numT = x;
+	char text = numT;
+	if(numT <= 91 && numT > 48)
+	{
+		numT--;
+		if(numT < 65)
+		{
+			numT += 26;
+		}
+	}
+	else
+	{
+		numT = 48;
+	}
+	text = numT;
+	return text;
 }
 
 int main(){
